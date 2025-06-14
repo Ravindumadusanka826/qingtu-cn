@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线交易 - 晴途科技</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/transaction.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/">
+            <img src="../images/Logo-removebg-preview.png" alt="晴途科技">
+            <h1>晴途科技</h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html" data-translate="nav_home">首页</a></li>
+            <li><a href="safety.html" data-translate="nav_safety">安全风控体系</a></li>
+            <li><a href="matching.html" data-translate="nav_matching">智能物流运营</a></li>
+            <li><a href="transaction.html" data-translate="nav_transaction" class="active">线上交易体系</a></li>
+            <li><a href="Cost_control.html" data-translate="nav_Cost_control">成本管控中心</a></li>
+            <li><a href="HRmanagement.html" data-translate="nav_HRmanagement">人力资源管理</a></li>
+            <li><a href="app_system.html" data-translate="nav_app_system">应用系统</a></li>
+            <li><a href="../index.html#about" data-translate="nav_about">关于我们</a></li>
+          </ul>
+        </nav>
+		<div class="header-actions">
+		  <button class="btn-language" id="langToggle" data-current-lang="zh">EN | 中文</button>
+		</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero transaction-hero">
+      <div class="container">
+          <h1 data-translate="transaction_hero_title">线上交易体系</h1>
+          <p data-translate="transaction_hero_subtitle">安全、高效的支付处理与合同管理解决方案</p>
+      </div>
+  </section>
+
+  <!-- Transaction Overview -->
+  <section class="transaction-overview">
+    <div class="container">
+      <div class="transaction-grid">
+        <div class="transaction-content">
+          <h2 data-translate="transaction_overview_title">无缝交易管理</h2>
+          <p data-translate="transaction_overview_text">我们的在线交易平台为危险品物流金融交易提供安全透明的环境。从初始协议到最终付款，我们确保流程顺畅，并为各方提供内置保护。</p>
+          <div class="transaction-stats">
+            <div class="stat">
+              <h3>100%</h3>
+              <p data-translate="stat_secure">安全支付</p>
+            </div>
+            <div class="stat">
+              <h3>$25M+</h3>
+              <p data-translate="stat_daily">日交易量</p>
+            </div>
+            <div class="stat">
+              <h3>24hr</h3>
+              <p data-translate="stat_support">全天候支持</p>
+            </div>
+          </div>
+        </div>
+        <div class="transaction-image">
+          <img src="https://images.pexels.com/photos/6693653/pexels-photo-6693653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="安全交易界面">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transaction Features -->
+  <section class="transaction-features">
+      <div class="container">
+        <h2 class="section-title" data-translate="features_title">核心交易功能</h2>
+        <div class="features-container">
+          <!-- Security Payment - Shield with dollar sign or lock with payment -->
+          <div class="feature-box">
+            <div class="feature-icon payment-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3 data-translate="feature_secure">安全支付</h3>
+            <p data-translate="feature_secure_desc">端到端加密支付处理</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon escrow-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 data-translate="feature_escrow">托管服务</h3>
+            <p data-translate="feature_escrow_desc">资金安全托管直至满足交付条件</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon contract-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <h3 data-translate="feature_contract">智能合约</h3>
+            <p data-translate="feature_contract_desc">数字合同生成与法律合规验证</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon invoice-icon">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3 data-translate="feature_invoice">自动开票</h3>
+            <p data-translate="feature_invoice_desc">生成并管理带支付跟踪的专业发票</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon dispute-icon">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <h3 data-translate="feature_dispute">争议解决</h3>
+            <p data-translate="feature_dispute_desc">公平透明的支付争议解决流程</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon analytics-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 data-translate="feature_analytics">财务分析</h3>
+            <p data-translate="feature_analytics_desc">全面的交易历史和模式报告</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Transaction Process -->
+  <section class="transaction-process">
+      <div class="container">
+          <h2 class="section-title" data-translate="process_title">交易流程</h2>
+          <div class="process-timeline">
+              <div class="timeline-item">
+                  <div class="timeline-marker">1</div>
+                  <div class="timeline-content">
+                      <h3 data-translate="process_step1">协议签署</h3>
+                      <p data-translate="process_step1_desc">签署数字合同</p>
+                  </div>
+              </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content">
+            <h3 data-translate="process_step2">定金支付</h3>
+            <p data-translate="process_step2_desc">托运人将款项存入安全托管账户</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-content">
+            <h3 data-translate="process_step3">服务交付</h3>
+            <p data-translate="process_step3_desc">承运人完成运输服务</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">4</div>
+          <div class="timeline-content">
+            <h3 data-translate="process_step4">确认收货</h3>
+            <p data-translate="process_step4_desc">托运人确认成功交付</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">5</div>
+          <div class="timeline-content">
+            <h3 data-translate="process_step5">款项释放</h3>
+            <p data-translate="process_step5_desc">托管资金释放给承运人</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">6</div>
+          <div class="timeline-content">
+            <h3 data-translate="process_step6">文件归档</h3>
+            <p data-translate="process_step6_desc">生成交易记录和收据</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Methods -->
+  <section class="payment-methods">
+    <div class="container">
+      <h2 class="section-title" data-translate="payment_title">支持的支付方式</h2>
+      <div class="payment-grid">
+        <!-- Bank Transfer -->
+        <div class="payment-method">
+          <div class="payment-icon bank-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#2963b7">
+              <path d="M3 4h18v2H3V4zm0 5h18v2H3V9zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+            </svg>
+          </div>
+          <h3 data-translate="payment_bank">银行转账</h3>
+          <p data-translate="payment_bank_desc">银行账户间直接转账</p>
+        </div>
+        
+        <!-- Credit/Debit Card -->
+        <div class="payment-method">
+          <div class="payment-icon credit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#d14343">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v2H4V6h16zm0 4v6H4v-6h16z"/>
+              <path d="M6 14h4v2H6z"/>
+            </svg>
+          </div>
+          <h3 data-translate="payment_card">信用卡/借记卡</h3>
+          <p data-translate="payment_card_desc">支持Visa、Mastercard、银联等主要卡种</p>
+        </div>
+        
+        <!-- Alipay -->
+        <div class="payment-method">
+          <div class="payment-icon alipay-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+              <path fill="white" d="M33.3 31.9c-1.7-1-3.5-1.7-5.4-2.1 1.7-2.3 2.8-5.1 3-8.1h-8.6v-3.1h5.8v-4.5h-5.8V8h-4.2c-.4 0-.7.3-.7.7v4.1h-5.8v4.5h5.8v3.1H9.4v4.2h8.4c-.3 3.3-1.7 6.3-3.9 8.6-3.9-2.9-6.4-7.5-6.4-12.6C7.5 11.4 15 4 24 4s16.5 7.4 16.5 16.5c0 3.8-1.3 7.3-3.5 10.1l-3.7 1.3z"/>
+              <path fill="#1677ff" d="M24 44c7.5 0 13.8-5.1 15.6-12H33.1c-1.4 3.5-4.8 6-8.8 6-3.9 0-7.3-2.4-8.7-5.8h-6.9C10.2 38.9 16.5 44 24 44z"/>
+            </svg>
+          </div>
+          <h3 data-translate="payment_alipay">支付宝</h3>
+          <p data-translate="payment_alipay_desc">中国领先的数字支付平台</p>
+        </div>
+        
+        <!-- WeChat Pay -->
+        <div class="payment-method">
+          <div class="payment-icon wechat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="white" d="M8.5 5.3c-3.5 0-6.3 2.4-6.3 5.4 0 1.6.8 3 2.1 4-.1.4-.4 1.4-.5 1.7 0 .1.1.2.2.1.1 0 1-.5 1.4-.7.8.3 1.7.5 2.7.5.3 0 .6 0 .9-.1-.2-.4-.3-.8-.3-1.3 0-2.3 2.1-4.2 4.7-4.2.3 0 .7 0 1 .1.1-3.1-2.7-5.5-6.2-5.5z"/>
+              <path fill="white" d="M19.8 8.1c.2 0 .5 0 .7.1-1-3.1-4.9-5.4-9.5-5.4C5.3 2.8 1 6.1 1 10.1c0 2.1 1 4 2.7 5.3l-.6 2.1c-.1.3.1.5.4.4.6-.2 1.1-.5 1.6-.5 1.6-.1.2.1.3.3.2.2-.1 1.5-.9 2.1-1.3 1.1.5 2.3.7 3.6.7.2 0 .4 0 .6-.1-.1-.2-.2-.4-.2-.7 0-1.6 1.4-2.9 3.2-2.9 1.7 0 3.1 1.3 3.2 2.9 0 .2 0 .4-.1.6 1.4-.2 2.6-.8 3.6-1.6 1.2-1 1.9-2.4 1.9-3.9.1-2.7-2.8-4.9-6.2-4.9z"/>
+              <path fill="white" d="M16.3 16.3c-1.8 0-3.2-1.3-3.2-2.9 0-1.6 1.4-2.9 3.2-2.9s3.2 1.3 3.2 2.9c0 1.6-1.4 2.9-3.2 2.9zm-4.7-4.5c-.5 0-.8-.3-.8-.8s.3-.8.8-.8.8.3.8.8-.4.8-.8.8zm4.7 0c-.5 0-.8-.3-.8-.8s.3-.8.8-.8.8.3.8.8-.4.8-.8.8z"/>
+            </svg>
+          </div>
+          <h3 data-translate="payment_wechat">微信支付</h3>
+          <p data-translate="payment_wechat_desc">通过微信集成支付</p>
+        </div>
+        
+        <!-- PayPal -->
+        <div class="payment-method">
+          <div class="payment-icon paypal-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="white" d="M7.3 17.2h1.1l.5-3.2c.1-.4.4-.7.8-.7h.5c3.3 0 5.8-1.3 6.5-5.1.1-.5.1-.9.1-1.3 0-.2 0-.4-.1-.6-.1-.3-.3-.5-.5-.6-.3-.2-.6-.2-.9-.2H9.8c-.4 0-.8.3-.8.7L7.3 17.2z"/>
+              <path fill="#003087" d="M18.1 6.3c-.4-.4-.9-.6-1.5-.6H9.8c-.4 0-.8.3-.8.7L6.7 18.1c0 .3.2.5.5.6.2.1.5.1.7.1h2.4l.7-4.4v.1c.1-.6.6-1 1.2-1h.8c2.8 0 5-1.1 5.6-4.3.3-1.4.1-2.6-.5-3.5z"/>
+              <path fill="#009cde" d="M17.1 6.3c-.3-.4-.8-.6-1.3-.6H9.8c-.4 0-.8.3-.8.7L6.7 18.1c0 .3.2.5.5.6.2.1.5.1.7.1h2.4l1-6.3v.1c0-.4.4-.7.8-.7h.8c2.8 0 5-1.1 5.6-4.3.2-1.1.2-2.1-.1-3.1z"/>
+            </svg>
+          </div>
+          <h3 data-translate="payment_paypal">PayPal</h3>
+          <p data-translate="payment_paypal_desc">国际在线支付系统</p>
+        </div>
+        
+        <!-- Cryptocurrency -->
+        <div class="payment-method">
+          <div class="payment-icon crypto-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#000">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+              <path d="M12 6v2l-2.5 2.5L12 13v2l-4.5-4.5L12 6zm0 6v2l-2.5 2.5L12 19v2l-4.5-4.5L12 12z"/>
+            </svg>
+          </div>
+          <h3 data-translate="payment_crypto">加密货币</h3>
+          <p data-translate="payment_crypto_desc">比特币等主要加密货币</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Measures -->
+  <section class="security-measures">
+    <div class="container">
+      <div class="security-content">
+        <div class="security-text">
+          <h2 data-translate="security_title">行业领先的安全保障</h2>
+          <p data-translate="security_text">晴途科技实施最高安全标准，保护您的金融交易和敏感信息。</p>
+          <ul class="security-list">
+            <li><span class="check-icon"></span><span data-translate="security_item1">所有交易端到端加密</span></li>
+            <li><span class="check-icon"></span><span data-translate="security_item2">支付处理符合PCI DSS 1级标准</span></li>
+            <li><span class="check-icon"></span><span data-translate="security_item3">账户访问双重认证</span></li>
+            <li><span class="check-icon"></span><span data-translate="security_item4">由独立公司定期进行安全审计</span></li>
+            <li><span class="check-icon"></span><span data-translate="security_item5">欺诈检测和预防系统</span></li>
+            <li><span class="check-icon"></span><span data-translate="security_item6">符合国际法规的数据保护</span></li>
+          </ul>
+        </div>
+        <div class="security-image">
+          <img src="https://images.pexels.com/photos/4623506/pexels-photo-4623506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="交易安全">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing">
+    <div class="container">
+      <h2 class="section-title" data-translate="pricing_title">交易费用</h2>
+      <p class="section-subtitle" data-translate="pricing_subtitle">透明定价，无隐藏费用</p>
+      <div class="pricing-table-container">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th data-translate="pricing_type">交易类型</th>
+              <th data-translate="pricing_standard">标准费用</th>
+              <th data-translate="pricing_premium">高级会员费用</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-translate="pricing_domestic">国内交易</td>
+              <td data-translate="pricing_domestic_standard">交易总额的2.5%</td>
+              <td data-translate="pricing_domestic_premium">交易总额的1.8%</td>
+            </tr>
+            <tr>
+              <td data-translate="pricing_international">国际交易</td>
+              <td data-translate="pricing_international_standard">交易总额的3.5%</td>
+              <td data-translate="pricing_international_premium">交易总额的2.8%</td>
+            </tr>
+            <tr>
+              <td data-translate="pricing_escrow">托管服务</td>
+              <td data-translate="pricing_escrow_standard">托管金额的1%</td>
+              <td data-translate="pricing_escrow_premium">托管金额的0.7%</td>
+            </tr>
+            <tr>
+              <td data-translate="pricing_contract">合同生成</td>
+              <td data-translate="pricing_contract_standard">每份合同25美元</td>
+              <td data-translate="pricing_contract_premium">免费</td>
+            </tr>
+            <tr>
+              <td data-translate="pricing_conversion">货币兑换</td>
+              <td data-translate="pricing_conversion_standard">兑换金额的1.5%</td>
+              <td data-translate="pricing_conversion_premium">兑换金额的0.8%</td>
+            </tr>
+          </tbody>
+        </table>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2 data-translate="cta_title">立即开始安全交易</h2>
+      <p data-translate="cta_text">加入数千家信任我们物流交易平台的企业</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+			<img src="../images/Logo-removebg-preview.png" alt="晴途科技">
+          <h2>晴途科技</h2>
+          <p data-translate="footer_tagline">连接全球物流</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" title="WeChat"><i class="fab fa-weixin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3 data-translate="footer_quick_links">快速链接</h3>
+          <ul>
+            <li><a href="../index.html" class="active" data-translate="nav_home">首页</a></li>
+            <li><a href="safety.html" data-translate="nav_safety">安全风控体系</a></li>
+            <li><a href="matching.html" data-translate="nav_matching">智能物流运营</a></li>
+            <li><a href="transaction.html" data-translate="nav_transaction">线上交易体系</a></li>
+            <li><a href="Cost_control.html" data-translate="nav_Cost_control">成本管控中心</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3 data-translate="footer_resources">资源中心</h3>
+          <ul>
+            <li><a href="#" data-translate="footer_blog">博客</a></li>
+            <li><a href="#" data-translate="footer_help">帮助中心</a></li>
+            <li><a href="#" data-translate="footer_faq">常见问题</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 data-translate="footer_contact">联系我们</h3>
+          <p>Email: 2394420383@qq.com</p>
+          <p data-translate="footer_phone">电话: +86 13371501878</p>
+          <p data-translate="footer_address">地址: 山东省烟台市莱山区黄海路街道滨海中路191号山东工商学院大学生创业中心M0032</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-translate="footer_copyright">© 2025 晴途科技 版权所有</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/transaction.js"></script>
+  <script src="../js/transaction_translate.js"></script>
+</body>
+</html>

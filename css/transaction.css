@@ -1,0 +1,436 @@
+/* Transaction Page Specific Styles */
+
+.transaction-hero {
+  background: linear-gradient(rgba(11, 60, 93, 0.8), rgba(11, 60, 93, 0.9)), url('https://images.pexels.com/photos/4481323/pexels-photo-4481323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Transaction Overview */
+.transaction-overview {
+  padding: var(--space-7) 0;
+}
+
+.transaction-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.transaction-content h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-3);
+  font-size: 2rem;
+}
+
+.transaction-content p {
+  color: var(--gray-700);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.transaction-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.transaction-stats .stat {
+  text-align: center;
+  padding: var(--space-3);
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.transaction-stats .stat h3 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: var(--space-1);
+}
+
+.transaction-stats .stat p {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  margin-bottom: 0;
+}
+
+.transaction-image img {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Transaction Features */
+.transaction-features {
+  padding: var(--space-7) 0;
+  background-color: var(--gray-100);
+}
+
+.transaction-features .features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.transaction-features .feature-box {
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.transaction-features .feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.transaction-features .feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  margin: 0 auto var(--space-3);
+}
+
+.transaction-features .feature-box h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: var(--space-2);
+  text-align: center;
+}
+
+.transaction-features .feature-box p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  text-align: center;
+}
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* If using Font Awesome icons */
+  font-size: 24px;
+  color: white;
+}
+
+/* Transaction Process */
+.transaction-process {
+  padding: var(--space-7) 0;
+}
+
+.process-timeline {
+  max-width: 800px;
+  margin: var(--space-5) auto 0;
+  position: relative;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: var(--gray-300);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: var(--space-5);
+  position: relative;
+}
+
+.timeline-marker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--space-3);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  padding-top: var(--space-1);
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: var(--space-1);
+}
+
+.timeline-content p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Payment Methods */
+.payment-methods {
+  padding: var(--space-7) 0;
+  background-color: var(--gray-100);
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.payment-method {
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.payment-method:hover {
+  transform: translateY(-10px);
+}
+
+.payment-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon background colors */
+.bank-icon {
+  background-color: #f0f4ff;
+}
+.credit-icon {
+  background-color: #fff5f5;
+}
+.alipay-icon {
+  background-color: #1677ff;
+}
+.wechat-icon {
+  background-color: #09b507;
+}
+.paypal-icon {
+  background-color: #003087;
+}
+.crypto-icon {
+  background-color: #f0f6ff;
+}
+
+/* Icon sizing */
+.payment-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.payment-method h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: var(--space-2);
+}
+
+.payment-method p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .payment-icon {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .payment-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Security Measures */
+.security-measures {
+  padding: var(--space-7) 0;
+}
+
+.security-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.security-text h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-3);
+}
+
+.security-text p {
+  color: var(--gray-700);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.security-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.security-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-3);
+  color: var(--gray-700);
+}
+
+.check-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--success-color);
+  border-radius: 50%;
+  margin-right: var(--space-2);
+  position: relative;
+}
+
+.check-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.security-image img {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Pricing Section */
+.pricing {
+  padding: var(--space-7) 0;
+  background-color: var(--gray-100);
+}
+
+.pricing-table-container {
+  overflow-x: auto;
+  margin: var(--space-5) 0;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.pricing-table th, .pricing-table td {
+  padding: var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.pricing-table th {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: var(--font-weight-semibold);
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tr:hover td {
+  background-color: var(--gray-100);
+}
+
+.pricing-note {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .transaction-grid, .security-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .transaction-image, .security-image {
+    order: -1;
+  }
+  
+  .transaction-features .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-marker {
+    width: 30px;
+    height: 30px;
+    font-size: 0.875rem;
+  }
+  
+  .process-timeline::before {
+    left: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .transaction-stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+  
+  .transaction-features .features-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-table th, .pricing-table td {
+    padding: var(--space-2);
+    font-size: 0.875rem;
+  }
+}

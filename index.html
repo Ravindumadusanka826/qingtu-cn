@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>晴途科技 - 综合物流平台</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/">
+            <img src="images/Logo-removebg-preview.png" alt="晴途科技">
+            <h1>晴途科技</h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active" data-translate="nav_home">首页</a></li>
+            <li><a href="pages/safety.html" data-translate="nav_safety">安全风控体系</a></li>
+            <li><a href="pages/matching.html" data-translate="nav_matching">智能物流运营</a></li>
+            <li><a href="pages/transaction.html" data-translate="nav_transaction">线上交易体系</a></li>
+			<li><a href="pages/Cost_control.html" data-translate="nav_Cost_control">成本管控中心</a></li>
+			<li><a href="pages/HRmanagement.html" data-translate="nav_HRmanagement">人力资源管理</a></li>
+			<li><a href="pages/app_system.html" data-translate="nav_app_system">应用系统</a></li>
+            <li><a href="#about" data-translate="nav_about">关于我们</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn-language" id="langToggle" data-current-lang="zh">EN | 中文</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+	  <img src="images/transport_truck.jpg" class="hero-background" alt=""/>
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-translate="hero_title">危险货物智慧运输综合管理平台</h1>
+        <p data-translate="hero_subtitle">为智驭危途，安全永驻</p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary btn-large" data-translate="cta_primary">立即开始</a>
+          <a href="#about" class="btn btn-secondary btn-large" data-translate="cta_secondary">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+      <div class="container">
+        <h2 class="section-title" data-translate="features_title">我们的核心服务</h2>
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 data-translate="feature1_title">安全风控体系</h3>
+            <p data-translate="feature1_desc">全面监控危险品运输操作并确保合规</p>
+            <a href="./pages/safety.html" class="btn-text" data-translate="learn_more">了解更多</a>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-truck-moving"></i>
+            </div>
+            <h3 data-translate="feature2_title">车货匹配</h3>
+            <p data-translate="feature2_desc">AI驱动的匹配系统连接危险品运输供需方</p>
+            <a href="./pages/matching.html" class="btn-text" data-translate="learn_more">了解更多</a>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 data-translate="feature3_title">在线交易</h3>
+            <p data-translate="feature3_desc">危险品运输的安全透明支付和合同管理</p>
+            <a href="./pages/transaction.html" class="btn-text" data-translate="learn_more">了解更多</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="counter" data-target="5000">0</h3>
+          <p data-translate="stat1">运输公司</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="12000">0</h3>
+          <p data-translate="stat2">货主企业</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="25000">0</h3>
+          <p data-translate="stat3">成功匹配</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="98">0</h3>
+          <p data-translate="stat4">安全评分</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title" data-translate="how_it_works">平台使用流程</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 data-translate="step1_title">注册</h3>
+          <p data-translate="step1_desc">创建运输方或货主账户</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 data-translate="step2_title">发布或搜索</h3>
+          <p data-translate="step2_desc">发布车辆或货物需求</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 data-translate="step3_title">智能匹配</h3>
+          <p data-translate="step3_desc">获取最适合的合作伙伴</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3 data-translate="step4_title">完成交易</h3>
+          <p data-translate="step4_desc">安全支付并跟踪运输</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+ <section class="testimonials">
+   <div class="container">
+     <h2 class="section-title" data-translate="testimonials_title">客户评价</h2>
+     <div class="testimonials-slider" id="testimonialsSlider">
+       <div class="testimonial">
+         <p data-translate="testimonial1">"晴途科技彻底改变了我们管理危险品车队的方式，安全风控体系功能确保我们始终符合GB 6944标准。"</p>
+         <div class="testimonial-author">
+           <h4>张伟</h4>
+           <p data-translate="testimonial1_role">北京运输公司车队经理</p>
+         </div>
+       </div>
+       <div class="testimonial">
+         <p data-translate="testimonial2">"车货匹配系统为我们节省了大量时间，效率提升了40%以上。强烈推荐用于危险品运输！"</p>
+         <div class="testimonial-author">
+           <h4>李军</h4>
+           <p data-translate="testimonial2_role">上海快运物流总监</p>
+         </div>
+       </div>
+       <div class="testimonial">
+         <p data-translate="testimonial3">"在线交易从未如此简单。该平台为我们的危险化学品运输提供了安全的支付和清晰的合同协议。"</p>
+         <div class="testimonial-author"> 
+           <h4>王梅</h4> 
+           <p data-translate="testimonial3-role">广州航运有限公司 CEO</p> 
+         </div> 
+       </div>
+     </div>
+     <div class="slider-controls">
+       <button id="prevTestimonial" class="prev-btn">&lt;</button>
+       <div id="testimonialDots" class="slider-dots"></div>
+       <button id="nextTestimonial" class="next-btn">&gt;</button>
+     </div>
+   </div>
+ </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title" data-translate="about_title">关于晴途科技</h2>
+          <p data-translate="about_desc1">晴途科技是致力于革新危险品运输行业的综合物流平台。我们将运输公司、货主和监管机构汇聚在同一平台，创建更安全、高效的物流生态系统。</p>
+          <p data-translate="about_desc2">我们的使命是利用技术克服传统物流挑战，减少空驶里程，加强安全合规，促进危险品运输各方之间的安全交易。</p>
+          <a href="#" class="btn btn-primary" data-translate="about_cta">了解更多</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg" alt="物流操作">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2 data-translate="cta_title">准备好改变您的物流运营了吗？</h2>
+      <p data-translate="cta_subtitle">加入数千家使用领先危险品物流平台的满意用户</p>
+      <a href="#" class="btn btn-large" data-translate="cta_button">立即开始</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+			<img src="images/Logo-removebg-preview.png" alt="晴途科技">
+          <h2>晴途科技</h2>
+          <p data-translate="footer_tagline">连接全球物流</p>
+          <div class="social-icons">
+			   <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+			   <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+			   <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			   <a href="#" class="social-icon" title="WeChat"><i class="fab fa-weixin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3 data-translate="footer_quick_links">快速链接</h3>
+          <ul>
+           <li><a href="index.html" class="active" data-translate="nav_home">首页</a></li>
+           <li><a href="pages/safety.html" data-translate="nav_safety">安全风控体系</a></li>
+           <li><a href="pages/matching.html" data-translate="nav_matching">智能物流运营</a></li>
+           <li><a href="pages/transaction.html" data-translate="nav_transaction">线上交易体系</a></li>
+           <li><a href="pages/Cost_control.html" data-translate="nav_Cost_control">成本管控中心</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3 data-translate="footer_resources">资源中心</h3>
+          <ul>
+            <li><a href="#" data-translate="footer_blog">博客</a></li>
+            <li><a href="#" data-translate="footer_help">帮助中心</a></li>
+            <li><a href="#" data-translate="footer_faq">常见问题</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 data-translate="footer_contact">联系我们</h3>
+          <p>Email: 2394420383@qq.com</p>
+          <p data-translate="footer_phone">电话: +86 13371501878</p>
+          <p data-translate="footer_address">地址: 山东省烟台市莱山区黄海路街道滨海中路191号山东工商学院大学生创业中心M0032</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-translate="footer_copyright">© 2025 晴途科技 版权所有</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/home.js"></script>
+  <script src="./js/home_Trnsltd.js"></script>
+</body>
+</html>

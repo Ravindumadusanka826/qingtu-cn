@@ -1,0 +1,258 @@
+// translate.js
+document.addEventListener('DOMContentLoaded', function() {
+  const translations = {
+    'en': {
+      nav_home: 'Home',
+      nav_safety: 'Safety Supervision',
+      nav_matching: 'Vehicle-Cargo Matching',
+      nav_transaction: 'Online Transaction',
+      nav_Cost_control: 'Cost Control',
+      nav_HRmanagement: 'HR Management',
+      nav_app_system: 'Application System',
+      nav_about: 'About Us',
+      'transaction_hero_title': 'Online Transaction',
+      'transaction_hero_subtitle': 'Secure, efficient payment processing and contract management',
+      'transaction_overview_title': 'Seamless Transaction Management',
+      'transaction_overview_text': 'Our Online Transaction platform provides a secure, transparent environment for all your hazardous goods logistics financial transactions. From initial agreements to final payments, we ensure a smooth process with built-in protections for all parties.',
+      'stat_secure': 'Secure Payments',
+      'stat_daily': 'Daily Transactions',
+      'stat_support': 'Support',
+      'features_title': 'Key Transaction Features',
+      'feature_secure': 'Secure Payments',
+      'feature_secure_desc': 'End-to-end encrypted payment processing',
+      'feature_escrow': 'Escrow Services',
+      'feature_escrow_desc': 'Funds held in secure escrow until delivery conditions are met',
+      'feature_contract': 'Smart Contracts',
+      'feature_contract_desc': 'Digital contract generation with legal compliance verification',
+      'feature_invoice': 'Automated Invoicing',
+      'feature_invoice_desc': 'Generate and manage professional invoices with payment tracking',
+      'feature_dispute': 'Dispute Resolution',
+      'feature_dispute_desc': 'Fair and transparent process for resolving payment disputes',
+      'feature_analytics': 'Financial Analytics',
+      'feature_analytics_desc': 'Comprehensive reports on transaction history and patterns',
+      'process_title': 'The Transaction Process',
+      'process_step1': 'Agreement',
+      'process_step1_desc': 'Sign digital contract',
+      'process_step2': 'Deposit',
+      'process_step2_desc': 'Shipper places payment in secure escrow account',
+      'process_step3': 'Service Delivery',
+      'process_step3_desc': 'Carrier completes the transportation service',
+      'process_step4': 'Confirmation',
+      'process_step4_desc': 'Shipper confirms successful delivery',
+      'process_step5': 'Payment Release',
+      'process_step5_desc': 'Funds released to carrier from escrow',
+      'process_step6': 'Documentation',
+      'process_step6_desc': 'Transaction records and receipts generated',
+      'payment_title': 'Supported Payment Methods',
+      'payment_bank': 'Bank Transfer',
+      'payment_bank_desc': 'Direct transfers between bank accounts',
+      'payment_card': 'Credit/Debit Card',
+      'payment_card_desc': 'Major cards including Visa, Mastercard, UnionPay',
+      'payment_alipay': 'Alipay',
+      'payment_alipay_desc': 'China\'s leading digital payment platform',
+      'payment_wechat': 'WeChat Pay',
+      'payment_wechat_desc': 'Integrated payment through WeChat',
+      'payment_paypal': 'PayPal',
+      'payment_paypal_desc': 'International online payment system',
+      'payment_crypto': 'Cryptocurrency',
+      'payment_crypto_desc': 'Bitcoin and other major cryptocurrencies',
+      'security_title': 'Industry-Leading Security',
+      'security_text': 'At 晴途科技, we implement the highest security standards to protect your financial transactions and sensitive information.',
+      'security_item1': 'End-to-end encryption for all transactions',
+      'security_item2': 'PCI DSS Level 1 compliance for payment processing',
+      'security_item3': 'Two-factor authentication for account access',
+      'security_item4': 'Regular security audits by independent firms',
+      'security_item5': 'Fraud detection and prevention systems',
+      'security_item6': 'Data protection compliant with international regulations',
+      'pricing_title': 'Transaction Fees',
+      'pricing_subtitle': 'Transparent pricing with no hidden fees',
+      'pricing_type': 'Transaction Type',
+      'pricing_standard': 'Standard Fee',
+      'pricing_premium': 'Premium Member Fee',
+      'pricing_domestic': 'Domestic Transactions',
+      'pricing_domestic_standard': '2.5% of total value',
+      'pricing_domestic_premium': '1.8% of total value',
+      'pricing_international': 'International Transactions',
+      'pricing_international_standard': '3.5% of total value',
+      'pricing_international_premium': '2.8% of total value',
+      'pricing_escrow': 'Escrow Services',
+      'pricing_escrow_standard': '1% of held amount',
+      'pricing_escrow_premium': '0.7% of held amount',
+      'pricing_contract': 'Contract Generation',
+      'pricing_contract_standard': '$25 per contract',
+      'pricing_contract_premium': 'Free',
+      'pricing_conversion': 'Currency Conversion',
+      'pricing_conversion_standard': '1.5% of converted amount',
+      'pricing_conversion_premium': '0.8% of converted amount',
+      'pricing_note': '* Premium membership is available for $99/month with additional benefits',
+      'pricing_button': 'Become a Premium Member',
+      'cta_title': 'Start Secure Transactions Today',
+      'cta_text': 'Join thousands of businesses that trust our platform for their logistics transactions',
+      'cta_button': 'Open Account',
+      'footer_tagline': 'Connecting Global Logistics',
+      'footer_quicklinks': 'Quick Links',
+      'footer_home': 'Home',
+      'footer_safety': 'Safety Supervision',
+      'footer_matching': 'Vehicle-Cargo Matching',
+      'footer_transaction': 'Online Transaction',
+      'footer_about': 'About Us',
+      'footer_resources': 'Resources',
+      'footer_blog': 'Blog',
+      'footer_help': 'Help Center',
+      'footer_faq': 'FAQs',
+      'footer_terms': 'Terms of Service',
+      'footer_privacy': 'Privacy Policy',
+      'footer_contact': 'Contact Us',
+      'footer_email': 'Email: info@logiconnect.com',
+      'footer_phone': 'Phone: +86 123 4567 8910',
+      'footer_address': 'Address: 123 Logistics Avenue, Shanghai, China',
+      'footer_copyright': '&copy; 2025 晴途科技. All Rights Reserved.'
+    },
+    'zh': {
+      'nav_home': '首页',
+      'nav_safety': '安全风控体系',
+      'nav_matching': '智能物流运营',
+      'nav_transaction': '线上交易体系',
+      'nav_Cost_control': '成本管控中心',
+      'nav_HRmanagement': '人力资源管理',
+      'nav_app_system': '应用系统',
+      'nav_about': '关于我们',
+      'transaction_hero_title': '线上交易体系',
+      'transaction_hero_subtitle': '安全、高效的支付处理与合同管理解决方案',
+      'transaction_overview_title': '无缝交易管理',
+      'transaction_overview_text': '我们的在线交易平台为危险品物流金融交易提供安全透明的环境。从初始协议到最终付款，我们确保流程顺畅，并为各方提供内置保护。',
+      'stat_secure': '安全支付',
+      'stat_daily': '日交易量',
+      'stat_support': '全天候支持',
+      'features_title': '核心交易功能',
+      'feature_secure': '安全支付',
+      'feature_secure_desc': '端到端加密支付处理',
+      'feature_escrow': '托管服务',
+      'feature_escrow_desc': '资金安全托管直至满足交付条件',
+      'feature_contract': '智能合约',
+      'feature_contract_desc': '数字合同生成与法律合规验证',
+      'feature_invoice': '自动开票',
+      'feature_invoice_desc': '生成并管理带支付跟踪的专业发票',
+      'feature_dispute': '争议解决',
+      'feature_dispute_desc': '公平透明的支付争议解决流程',
+      'feature_analytics': '财务分析',
+      'feature_analytics_desc': '全面的交易历史和模式报告',
+      'process_title': '交易流程',
+      'process_step1': '协议签署',
+      'process_step1_desc': '签署数字合同',
+      'process_step2': '定金支付',
+      'process_step2_desc': '托运人将款项存入安全托管账户',
+      'process_step3': '服务交付',
+      'process_step3_desc': '承运人完成运输服务',
+      'process_step4': '确认收货',
+      'process_step4_desc': '托运人确认成功交付',
+      'process_step5': '款项释放',
+      'process_step5_desc': '托管资金释放给承运人',
+      'process_step6': '文件归档',
+      'process_step6_desc': '生成交易记录和收据',
+      'payment_title': '支持的支付方式',
+      'payment_bank': '银行转账',
+      'payment_bank_desc': '银行账户间直接转账',
+      'payment_card': '信用卡/借记卡',
+      'payment_card_desc': '支持Visa、Mastercard、银联等主要卡种',
+      'payment_alipay': '支付宝',
+      'payment_alipay_desc': '中国领先的数字支付平台',
+      'payment_wechat': '微信支付',
+      'payment_wechat_desc': '通过微信集成支付',
+      'payment_paypal': 'PayPal',
+      'payment_paypal_desc': '国际在线支付系统',
+      'payment_crypto': '加密货币',
+      'payment_crypto_desc': '比特币等主要加密货币',
+      'security_title': '行业领先的安全保障',
+      'security_text': '晴途科技实施最高安全标准，保护您的金融交易和敏感信息。',
+      'security_item1': '所有交易端到端加密',
+      'security_item2': '支付处理符合PCI DSS 1级标准',
+      'security_item3': '账户访问双重认证',
+      'security_item4': '由独立公司定期进行安全审计',
+      'security_item5': '欺诈检测和预防系统',
+      'security_item6': '符合国际法规的数据保护',
+      'pricing_title': '交易费用',
+      'pricing_subtitle': '透明定价，无隐藏费用',
+      'pricing_type': '交易类型',
+      'pricing_standard': '标准费用',
+      'pricing_premium': '高级会员费用',
+      'pricing_domestic': '国内交易',
+      'pricing_domestic_standard': '交易总额的2.5%',
+      'pricing_domestic_premium': '交易总额的1.8%',
+      'pricing_international': '国际交易',
+      'pricing_international_standard': '交易总额的3.5%',
+      'pricing_international_premium': '交易总额的2.8%',
+      'pricing_escrow': '托管服务',
+      'pricing_escrow_standard': '托管金额的1%',
+      'pricing_escrow_premium': '托管金额的0.7%',
+      'pricing_contract': '合同生成',
+      'pricing_contract_standard': '每份合同25美元',
+      'pricing_contract_premium': '免费',
+      'pricing_conversion': '货币兑换',
+      'pricing_conversion_standard': '兑换金额的1.5%',
+      'pricing_conversion_premium': '兑换金额的0.8%',
+      'pricing_note': '* 高级会员每月99美元，享受额外福利',
+      'pricing_button': '成为高级会员',
+      'cta_title': '立即开始安全交易',
+      'cta_text': '加入数千家信任我们物流交易平台的企业',
+      'cta_button': '开通账户',
+      'footer_home': '首页',
+      'footer_safety': '安全监管',
+      'footer_matching': '车货匹配',
+      'footer_transaction': '在线交易',
+      'footer_about': '关于我们',
+      'footer_terms': '服务条款',
+      'footer_privacy': '隐私政策',
+	  footer_tagline: "连接全球物流",
+	  footer_quick_links: "快速链接",
+	  footer_resources: "资源中心",
+	  footer_blog: "博客",
+	  footer_help: "帮助中心",
+	  footer_faq: "常见问题",
+	  footer_contact: "联系我们",
+	  footer_phone: "电话: +86 13371501878",
+	  footer_address: "地址: 山东省烟台市莱山区黄海路街道滨海中路191号山东工商学院大学生创业中心M0032",
+	  footer_copyright: "© 2025 晴途科技 版权所有"
+    }
+  };
+
+  // Set initial language based on browser preference or default to Chinese
+  let currentLang = localStorage.getItem('lang') || 'zh';
+  
+  // Apply translations based on current language
+  function applyTranslations() {
+    document.documentElement.lang = currentLang;
+    const elements = document.querySelectorAll('[data-translate]');
+    
+    elements.forEach(element => {
+      const key = element.getAttribute('data-translate');
+      if (translations[currentLang] && translations[currentLang][key]) {
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+          element.value = translations[currentLang][key];
+        } else {
+          element.innerHTML = translations[currentLang][key];
+        }
+      }
+    });
+  }
+
+  // Initialize translations
+  applyTranslations();
+
+  // Language toggle functionality
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', function() {
+      currentLang = currentLang === 'zh' ? 'en' : 'zh';
+      localStorage.setItem('lang', currentLang);
+      applyTranslations();
+      
+      // Update button text
+      if (currentLang === 'zh') {
+        langToggle.textContent = 'EN | 中文';
+      } else {
+        langToggle.textContent = '中文 | EN';
+      }
+    });
+  }
+});
